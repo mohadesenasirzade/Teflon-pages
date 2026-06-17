@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>یکتا تفلون | بزرگترین مرجع بازسازی ظروف</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/Home/Home.css" />
-    <link rel="stylesheet" href="styles/swiper.css">
-    <link rel="stylesheet" href="styles/googlefonts.css">
+    <link rel="stylesheet" href="Styles/base.css" />
+    <link rel="stylesheet" href="Styles/Home/Home.css" />
+    
+    <link rel="stylesheet" href="Styles/swiper.css">
+    <link rel="stylesheet" href="Styles/googlefonts.css">
   </head>
   <body>
     <!-- Top Bar -->
@@ -15,7 +16,7 @@
       <div class="container top-bar__wrapper">
         <div class="top-bar__right">
           <div class="top-bar__item">
-            <img src="images/Map Pin Icon.png" alt="icon" />
+            <div class="bg-icon"> <img src="images/blu-map.png" alt="icon" /></div>
             <span
               >شعبه ۱: تهران - بزرگراه سعیدی - نرسیده به سی متری جی - نبش کوچه
               عراقی</span
@@ -24,11 +25,11 @@
         </div>
         <!-- <div class="top-bar__left hide-mobile"> -->
         <div class="top-bar__item highlight hide-mobile">
-          <img src="images/Shield Icon.png" alt="icon" />
+          <div class="bg-icon"> <img src="images/Shield-blu.png" alt="icon" /></div>
           <span>ضمانت‌نامه کتبی تا ۳۶ ماه</span>
         </div>
         <div class="top-bar__item hide-mobile">
-          <img src="images/Clock Icon.png" alt="icon" />
+        <div class="bg-icon"> <img src="images/Clock Icon.png" alt="icon" /></div>
           <span>ساعت کاری: شنبه الی پنجشنبه ۱۰ الی ۱۹:۰۰ به‌صورت یکسره</span>
         </div>
         <!-- </div> -->
@@ -38,6 +39,13 @@
     <!-- Main Header -->
     <header class="header">
       <div class="container header__wrapper">
+          <!-- Hamburger (Mobile Only) -->
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
             <!-- Logo (Right) -->
         <div class="header__logo">
           <img src="images/Logo.png" alt="یکتا تفلون" />
@@ -63,13 +71,7 @@
           <a href="#" class="btn btn--outline">رهگیری سفارش</a>
         </div>
 
-     
-        <!-- Hamburger (Mobile Only) -->
-        <button class="hamburger show-mobile">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  
     
       </div>
     </header>
@@ -120,16 +122,70 @@
         <div class="hero__image-side">
           <div class="video-box">
             <img src="images/Image Overlay.png" alt="کارگاه بازسازی ظروف" />
-            <button class="play-btn">
+            <!-- <button class="play-btn">
               <svg viewBox="0 0 24 24" width="30" height="30">
                 <path fill="#0052CC" d="M8 5v14l11-7z" />
               </svg>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
     </main>
+<div class="menu">
+  <div class="menu-icons">
+    <img src="images/Logo(1).png" alt="">
+    <div class="blu-arrow">
+      <img src="images/blu-arrow.png" alt="">
+    </div>
+  </div>
+  <div class="menu-actions">
+    <div class="menoa-acti"><span>منو</span></div>
+    <div class="feature-acti"><span>خدمات</span></div>
+  </div>
+  <nav class="nav-menu">
+    <ul>
+      <li class="menu-active"><span>خانه</span></li>
+      <li>تعرفه</li>
+      <li>نحوه ارسال</li>
+      <li>نمونه کار</li>
+      <li>نمونه رنگ ها</li>
+      <li>سوالات متداول</li>
+      <li>مقالات</li>
+      <li>درباره</li>
+      <li>تماس</li>
+    </ul>
+  </nav>
+  <div class="btns-menu">
+    <div class="btn-order-left btn-order-left2">
+      <span class="btn-left-text">ثبت سفارش + پیک رایگان</span>
+    </div>
+    <div class="btn-order-right">
+      <span class="bale-order-num bale-order-num2">ثبت سفارش</span>
+    </div>
 
+  </div>
+  <div class="info-connection">
+    <div class="btns-menu2">
+      <div class="btns-connetion2">
+        <div class="bale-conection">
+          <img src="images/bale-menu.png" alt="">
+          <span>مشاوره رایگان در بله</span>
+        </div>
+      </div>
+      <div class=" btns-connetion-insta">
+        <div class=" insta-connection">
+          <img src="images/instagram.png" alt="">
+          <span>هم اکنون دنبال کنید : @Yekta_teflon</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="call-info">
+      <span class="bale-order-num">۰۹۳۶ ۸۶۲ ۸۳۰۰</span>
+      <img src="images/Phone icon.png" alt="">
+    </div>
+  </div>
+  </div>
       <!-- Products Section -->
   <div class="products">
     <!-- style="max-width:1330px; width:100%; padding:0;" -->
@@ -141,32 +197,32 @@
       <div class="products-wrapper">
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف تفلون</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف چدنی</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف استیل</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف سرامیکی</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف آلومینیومی</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
         <div class="product"><img src="images/28e7cb2e5b31aa3b8e16c40ca32b51232f5ca3c3.png" alt="">
           <div class="product-box"><span class="pro-name">ظروف گرانیتی</span>
-            <div class="bg-icon"><img src="images/arrow-left.png" alt=""></div>
+            <div class="bg-icon2"><img src="images/arrow-left.png" alt=""></div>
           </div>
         </div>
          <div class="more-products extra-product">
@@ -284,8 +340,322 @@
         </div>
       </div>
     </div>
-  </div
-  <!-- features -->
+  </div>
+  <!-- prices-pro -->
+  <div class="prices-pro">
+    <div class="container">
+      <div class="prices-info">
+        <div class="prices-info-title">
+          <div class="price-title">
+            <img src="images/Logo(1).png" alt="">
+            <span class="price-title-te"> تعرفه خدمات بازسازی ظروف</span>
+          </div>
+          <div class="price-info-ti">
+            <span>قیمت ها بر اساس نوع خدمت و سایز ظرف محاسبه می‌ شود.</span>
+          </div>
+          <div class="price-update">
+            <div class="price-update-right">
+              <div class="price-cals">
+                <img src="images/cal.png" alt="">
+              </div>
+              <div class="price-last-up">
+                <span>آخرین به روزرسانی:</span>
+              </div>
+            </div>
+            <div class="price-date">
+              <span>1405</span>
+              <span>/</span>
+              <span>03</span>
+              <span>/</span>
+              <span>15</span>
+            </div>
+  
+          </div>
+        </div>
+        <div class="prices-box">
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+          <div class="pric-box">
+            <div class="pri-box-top">
+              <div class="pri-top-ti">
+                <span>داخل گرانیت (بیرون رنگ)</span>
+              </div>
+              <div class="pri-top-subti">
+                <span>تا سایز ۳۲ سانتی متر</span>
+              </div>
+            </div>
+            <span class="price-space-line"></span>
+            <div class="price-count">
+              <span class="price-num">۳۵۸،۰۰۰</span>
+              <span class="price-val">تومان</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- price-note -->
+  <div class="price-notes">
+    <div class="container">
+      <div class="price-note">
+        <div class="price-no-img">
+          <img src="images/info.png" alt="">
+        </div>
+        <span>قیمت ها تقریبی بوده و با توجه به وضعیت ظرف و نوع خدمت ممکن است تغییر کند. </span>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <div class="container">
+      <div class="questions-box">
+        <div class="question-box1">
+          <div class="question-title">
+            <span>در مورد قیمت ها سوال دارید؟</span>
+          </div>
+          <div class="question-subtitle">
+            <span>از ظروف خود در پیامرسان بله عکس ارسال کنید و مشاوره و قیمت را دریافت کنید</span>
+          </div>
+          <div class="call">
+            <div class="call-icon">
+              <img src="images/phone.png" alt="">
+            </div>
+            <!-- <span class="phone-num">۰۹۳۶ ۸۶۲۸ ۳۰۰</span> -->
+            <span class="add-subti phone-num">
+              ۰۹۳۶۸۶۲۸۳۰۰
+            </span>
+          </div>
+        </div>
+        <div class="question-box2 questions-part">
+          <div class="question-part">
+            <div class="part-icon">
+              <img src="images/cooking-pot.png" alt="">
+            </div>
+            <div class="q-part-text">
+              <div class="question-title">
+                <span>پوشش بیرونی</span>
+              </div>
+              <div class="question-subtitle">
+                <span>در صورت درخواست انجام میشود </span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="question-part">
+            <div class="part-icon">
+              <img src="images/Shield Icon.png" alt="">
+            </div>
+            <div class="q-part-text">
+              <div class="question-title">
+                <span>پوشش بیرونی</span>
+              </div>
+              <div class="question-subtitle">
+                <span>در صورت درخواست انجام میشود </span>
+              </div>
+            </div>
+  
+          </div>
+          <div class="question-part">
+            <div class="part-icon">
+              <img src="images/gem.png" alt="">
+            </div>
+            <div class="q-part-text">
+              <div class="question-title">
+                <span>پوشش بیرونی</span>
+              </div>
+              <div class="question-subtitle">
+                <span>در صورت درخواست انجام میشود </span>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- guarantees -->
+  <div class="guarantees">
+    <div class="container">
+      <div class="guarantee">
+        <div class="guarantee-right">
+          <div class="top-guarantee">
+            <img src="images/sheild.png" alt="icon" />
+            <span>24 ماه ضمانت</span>
+          </div>
+          <div class="guarantees-title">
+            <span>تمامی پوشش ها از برند PFLUON مباشند</span>
+          </div>
+          <div class="madein">
+            <span class="madein-country">کشور سازنده:</span>
+            <div class="country">
+              <img src="images/china.png" alt="">
+              <span>چین</span>
+            </div>
+          </div>
+          <div class="usages">
+            <div class="usage-ti"><span>کاربرد:</span></div>
+            <div class="usage"><span>پوشش داخل ظرف</span></div>
+            <div class="usage"><span>پوشش خارج ظرف</span></div>
+          </div>
+        </div>
+        <div class="guarantee-left">
+          <div class="pro-colors">
+            <div class="pro-color-active">
+              <div class="col col-brown"></div>
+              <span>مسی</span>
+            </div>
+            <div class="pro-color">
+              <div class="col col-nescoffe"></div>
+              <span>نسکافه ای</span>
+            </div>
+            <div class="pro-color">
+              <div class="col col-gray"></div>
+              <span>طوسی</span>
+            </div>
+            <div class="pro-color">
+              <div class="col col-cream"></div>
+              <span>کرم</span>
+            </div>
+            <div class="pro-color">
+              <div class="col col-darkred"></div>
+              <span>زرشکی</span>
+            </div>
+            <div class="pro-color">
+              <div class="col col-black"></div>
+              <span>مشکی</span>
+            </div>
+          </div>
+          <div class="pro-img">
+            <img src="images/mesi-pro.png" alt="">
+            <div class="pro-info">
+              <span>چکشی مسی</span>
+              <div class="pro-code">
+                <span>کد: ۵</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /* features  */ -->
   <div class="features">
     <div class="container">
       <div class="features-wrapper">
@@ -413,6 +783,312 @@
       </div>
     </div>
   </div>
+      <!-- order -->
+      <div class="order">
+        <div class="container">
+          <div class="order-wrapper">
+            <h3 class="order-title">همین حالا سفارش خود را برای خدمات بازسازی ظروف ثبت کنید، یا برای مشاوره در بله با ما
+              در
+              تماس باشید.</h3>
+            <div class="btns-order">
+              <div class="btn-order-right">
+                <img src="images/bale.png" alt="">
+                <span class="bale-order-num">۰۹۳۶ ۸۶۲ ۸۳۰۰</span>
+              </div>
+              <div class="btn-order-left">
+                <span class="btn-left-text">ثبت سفارش + پیک رایگان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Example work -->
+      <div class="ex-works">
+        <div class="container ex-works-container">
+          <div class="reconstruction-title">
+            <img src="images/Logo(1).png" alt="">
+            <span class="reconstruction-title-te"> نمونه کار بازسازی</span>
+          </div>
+          <div class="ex-works-wrapper">
+            <div class="work-right">
+              <div class="work-ri-top">
+                <div class="work-ims">
+                  <div class="w-img w-img-right">
+                    <img src="images/zar (1).png" alt="">
+                    <span class="w-img1">قبل</span>
+                  </div>
+                  <div class="w-img w-img-left"><img src="images/zar (3).png" alt="">
+                    <span class="w-img2">بعد</span>
+                  </div>
+                  <div class="horiznatal-flash"><img src="images/move-horizontal.png" alt=""></div>
+                </div>
+      
+                <!-- <div class="work-text"></div> -->
+                <div class="works-text2">
+                  <span class="work-text2">بازسازی ظرف تفلون</span>
+                </div>
+              </div>
+              <div class="work-ri-bottom">
+                <div class="work-ri-bottom-wrapper">
+                  <img class="no-opacity" src="images/zar (1).png" alt="">
+                  <img class="opacity" src="images/zar (1).png" alt="">
+                  <img class="opacity" src="images/zar (1).png" alt="">
+                  <img class="opacity" src="images/zar (1).png" alt="">
+      
+                </div>
+      
+              </div>
+      
+            </div>
+            <div class="work-left  swiper">
+      
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="work">
+                    <div class="pic">
+                      <div class="pic-play">
+                        <img src="images/quote.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="info-name">
+                      <span>آقای احمدی</span>
+                      <div class="stars">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="work-info">
+                      <div class="work-text">
+                        <span>
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                          چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="work">
+                    <div class="pic">
+                      <div class="pic-play">
+                        <img src="images/quote.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="info-name">
+                      <span>آقای احمدی</span>
+                      <div class="stars">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="work-info">
+                      <div class="work-text">
+                        <span>
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                          چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="work">
+                    <div class="pic">
+                      <div class="pic-play">
+                        <img src="images/quote.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="info-name">
+                      <span>آقای احمدی</span>
+                      <div class="stars">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                        <img src="images/star.png" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="work-info">
+                      <div class="work-text">
+                        <span>
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                          چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="mr-arrows">
+                <div class="mr-arrow mr-arrow-ri">
+                  <img src="images/arrow-right.png" class="swiper-button-next" alt="">
+                </div>
+      
+                <div class="swiper-pagination"></div>
+      
+                <div class="mr-arrow mr-arrow-le">
+                  <img src="images/arrow-left.png" class="swiper-button-prev" alt="">
+                </div>
+              </div>
+      
+      
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      <!-- نمونه کار بازسازی  -->
+      <div class="portfolio-slider">
+        <div class="container">
+          <div class="portfolio-slider__wrapper">
+            <!-- هدر -->
+            <div class="portfolio-slider__header">
+              <img src="images/Logo(1).png" alt="لوگو">
+              <span class="portfolio-slider__title">نمونه کار بازسازی</span>
+            </div>
+      
+            <!-- اسلایدر -->
+            <div class="portfolio-slider__swiper swiper">
+              <div class="swiper-wrapper">
+                <!-- اسلاید 1 -->
+                <div class="swiper-slide p-slide">
+                  <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="images/zar (1).png" alt="بازسازی ظروف گرانیت">
+                    <div class="portfolio-card__body">
+                      <h3 class="portfolio-card__title">بازسازی ظروف گرانیت</h3>
+                      <p class="portfolio-card__desc">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                      </p>
+                    </div>
+                    <div class="portfolio-card__actions">
+                      <button class="portfolio-btn portfolio-btn--outline">جزئیات</button>
+                      <button class="portfolio-btn portfolio-btn--primary">مشاهده</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- اسلاید 2 -->
+                <div class="swiper-slide p-slide">
+                  <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="images/zar (1).png" alt="بازسازی ظروف مسی">
+                    <div class="portfolio-card__body">
+                      <h3 class="portfolio-card__title">بازسازی ظروف مسی</h3>
+                      <p class="portfolio-card__desc">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                      </p>
+                    </div>
+                    <div class="portfolio-card__actions">
+                      <button class="portfolio-btn portfolio-btn--outline">جزئیات</button>
+                      <button class="portfolio-btn portfolio-btn--primary">مشاهده</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- اسلاید 3 -->
+                <div class="swiper-slide p-slide">
+                  <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="images/zar (1).png" alt="بازسازی ظروف تفلون">
+                    <div class="portfolio-card__body">
+                      <h3 class="portfolio-card__title">بازسازی ظروف تفلون</h3>
+                      <p class="portfolio-card__desc">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                      </p>
+                    </div>
+                    <div class="portfolio-card__actions">
+                      <button class="portfolio-btn portfolio-btn--outline">جزئیات</button>
+                      <button class="portfolio-btn portfolio-btn--primary">مشاهده</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- اسلاید 4 -->
+                <div class="swiper-slide p-slide">
+                  <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="images/zar (1).png" alt="بازسازی ظروف سنگی">
+                    <div class="portfolio-card__body">
+                      <h3 class="portfolio-card__title">بازسازی ظروف سنگی</h3>
+                      <p class="portfolio-card__desc">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                      </p>
+                    </div>
+                    <div class="portfolio-card__actions">
+                      <button class="portfolio-btn portfolio-btn--outline">جزئیات</button>
+                      <button class="portfolio-btn portfolio-btn--primary">مشاهده</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- اسلاید 5 -->
+                <div class="swiper-slide p-slide">
+                  <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="images/zar (1).png" alt="بازسازی ظروف چدنی">
+                    <div class="portfolio-card__body">
+                      <h3 class="portfolio-card__title">بازسازی ظروف چدنی</h3>
+                      <p class="portfolio-card__desc">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                      </p>
+                    </div>
+                    <div class="portfolio-card__actions">
+                      <button class="portfolio-btn portfolio-btn--outline">جزئیات</button>
+                      <button class="portfolio-btn portfolio-btn--primary">مشاهده</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="butns">
+                <!-- دکمه‌های ناوبری -->
+                <div class="bg-swi">
+                  <img src="images/arrow-right.png" class="swiper-button-prev prev-arr" alt="">
+                </div>
+                <div class="bg-swi">
+                  <img src="images/arrow-left.png" class="swiper-button-next next-arr" alt="">
+                </div>
+      
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- order -->
+      <div class="order">
+        <div class="container">
+          <div class="order-wrapper">
+            <h3 class="order-title">همین حالا سفارش خود را برای خدمات بازسازی ظروف ثبت کنید، یا برای مشاوره در بله با ما
+              در
+              تماس باشید.</h3>
+            <div class="btns-order">
+              <div class="btn-order-right">
+                <img src="images/bale.png" alt="">
+                <span class="bale-order-num">۰۹۳۶ ۸۶۲ ۸۳۰۰</span>
+              </div>
+              <div class="btn-order-left">
+                <span class="btn-left-text">ثبت سفارش + پیک رایگان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
      <!-- /* branches  */ -->
   <div class="branches">
     <div class="container">
@@ -492,7 +1168,7 @@
       </div>
     </div>
   </div>
-    /* FAQ Section  */
+    <!-- /* FAQ Section  */ -->
   <section class="faq" id="faq">
     <div class="container">
       <div class="faq-wrapper">
@@ -680,8 +1356,15 @@
           </div>
           <div class="show-more"><span>مشاهده همه مقالات</span></div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
+        </div>
+        <div class="fab">
+          <img src="images/bale-fab.png" alt="">
+          <div class="fab-content">
+            <span class="fab-co-te">مشاوره رایگان در بله</span>
+            <span class="fab-co-num">۰۹۳۶ ۸۶۲ ۸۳۰۰</span>
+          </div>
   </div>
     <!-- footer -->
   <div class="footer">
@@ -807,75 +1490,89 @@
         </div>
       </div>
     </div>
+
   </body>
-   <script src="scripts/swipercdn.js"></script>
-    <script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-      const hamburger = document.querySelector('.hamburger');
-      const mobileNav = document.querySelector('.mobile-nav');
-      if (hamburger && mobileNav) {
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('hamburger--active');
-          mobileNav.classList.toggle('mobile-nav--active');
-          document.body.style.overflow = mobileNav.classList.contains('mobile-nav--active') ? 'hidden' : '';
-        });
+<script src="scripts/swipercdn.js"></script>
+    <script src="scripts/main.js"></script>
+<script>
+                                                                                                                                      const workSwiper = new Swiper(".work-left", {
+                                                                                                                                        slidesPerView: 1,
+                                                                                                                                        spaceBetween: 0,
+                                                                                                                                      // loop: true,
 
-        mobileNav.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-            hamburger.classList.remove('hamburger--active');
-            mobileNav.classList.remove('mobile-nav--active');
-            document.body.style.overflow = '';
-          });
-        });
-      }
-      // swiper1
-      var swiper = new Swiper(".mySwiper", {
+                                                                                                                                      navigation: {
+                                                                                                                                        nextEl: ".work-left .swiper-button-next",
+                                                                                                                                        prevEl: ".work-left .swiper-button-prev",
+                                                                                                                                      },
+
         pagination: {
-          el: ".swiper-pagination",
+          el: ".work-left .swiper-pagination",
+          clickable: true,
         },
       });
-      // Swiper اول (pay) - فقط pagination
-      var paySwiper = new Swiper(".paySwiper", {
-        pagination: {
-          el: ".pay-pagination",
-        },
-      });
+                                                                                                                            // 
+                                                                                                                            document.addEventListener('DOMContentLoaded', function () {
+                                                                                                                              const swiper = new Swiper('.portfolio-slider__swiper', {
+                                                                                                                                // تعداد اسلایدهای قابل مشاهده
+                                                                                                                                slidesPerView: 1,
+                                                                                                                                spaceBetween: 20,
+                                                                                                                                loop: true,
 
-
-      var worksSwiper = new Swiper(".worksSwiper", {
+                                                                                                                              // ناوبری
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.portfolio-slider__swiper .swiper-button-next',
+          prevEl: '.portfolio-slider__swiper .swiper-button-prev',
         },
+
+                                                                                                                              // Pagination
         pagination: {
-          el: ".swiper-pagination",
+          el: '.portfolio-slider__swiper .swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
         },
-        slidesPerView: 1,
-        spaceBetween: 20,
+
+                                                                                                                              // تنظیمات ریسپانسیو
+                                                                                                                              breakpoints: {
+                                                                                                                                // وقتی عرض صفحه >= 576px
+                                                                                                                                576: {
+                                                                                                                                  slidesPerView: 2,
+                                                                                                                                  spaceBetween: 20,
+                                                                                                                              },
+                                                                                                                              // وقتی عرض صفحه >= 768px
+                                                                                                                              768: {
+                                                                                                                                slidesPerView: 3,
+                                                                                                                                spaceBetween: 24,
+                                                                                                                              },
+                                                                                                                              // وقتی عرض صفحه >= 1024px
+                                                                                                                              1024: {
+                                                                                                                                slidesPerView: 4,
+                                                                                                                                spaceBetween: 30,
+                                                                                                                              },
+        },
+
+                                                                                                                              // انیمیشن
+                                                                                                                              speed: 400,
+
+                                                                                                                              // حرکت خودکار (اختیاری - فعال کنید اگر می‌خواهید)
+                                                                                                                              // autoplay: {
+                                                                                                                              //   delay: 3000,
+                                                                                                                              //   disableOnInteraction: true,
+                                                                                                                              // },
+
+                                                                                                                              // افکت (اختیاری)
+                                                                                                                              // effect: 'slide',
+
+                                                                                                                              // کشیدن با موس
+                                                                                                                              grabCursor: true,
+
+                                                                                                                              // صفحه‌گردی با کیبورد (اختیاری)
+                                                                                                                              keyboard: {
+                                                                                                                                enabled: true,
+                                                                                                                                onlyInViewport: true,
+                                                                                                                              },
       });
-      var resSwiper = new Swiper(".resSwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".res-pagination",
-        },
-        slidesPerView: 1,
-        spaceBetween: 20,
-      });
-      // swiper2
-      // var swiper = new Swiper(".mySwiper", {
-      //   cssMode: true,
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev",
-      //   },
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //   },
-      //   mousewheel: true,
-      //   keyboard: true,
-      // });
+                                                                                                                          });
     </script>
 </html>
