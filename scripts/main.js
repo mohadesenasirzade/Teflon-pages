@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // ==========================================
-  // 1. منوی همبرگر (با کلاس .menu)
+  // 1. منوی همبرگر (.menu)
   // ==========================================
   const hamburger = document.querySelector(".hamburger");
   const mobileMenu = document.querySelector(".menu");
@@ -170,4 +170,124 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   console.log("✅ همه چیز با موفقیت راه‌اندازی شد!");
+});
+
+// gallery
+// تنظیمات اسلایدر بندانگشتی (ریزعکس‌ها)
+var galleryThumbs = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  // تغییر جهت هوشمند بر اساس اندازه صفحه نمایش
+  breakpoints: {
+    320: {
+      direction: "horizontal",
+      slidesPerView: 4,
+    },
+    641: {
+      direction: "vertical",
+      slidesPerView: 4,
+    },
+  },
+});
+
+// تنظیمات اسلایدر اصلی
+var galleryTop = new Swiper(".gallery-top", {
+  spaceBetween: 10,
+  loop: true,
+  loopedSlides: 5,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
+// work swiper
+const workSwiper = new Swiper(".work-left", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // loop: true,
+
+  navigation: {
+    nextEl: ".work-left .swiper-button-next",
+    prevEl: ".work-left .swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".work-left .swiper-pagination",
+    clickable: true,
+  },
+});
+// portfolio-slider__swiper
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".portfolio-slider__swiper", {
+    // تعداد اسلایدهای قابل مشاهده
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+
+    // ناوبری
+    navigation: {
+      nextEl: ".portfolio-slider__swiper .swiper-button-next",
+      prevEl: ".portfolio-slider__swiper .swiper-button-prev",
+    },
+
+    // Pagination
+    pagination: {
+      el: ".portfolio-slider__swiper .swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+
+    // تنظیمات ریسپانسیو
+    breakpoints: {
+      // وقتی عرض صفحه >= 576px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // وقتی عرض صفحه >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      // وقتی عرض صفحه >= 1024px
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+
+    // انیمیشن
+    speed: 400,
+
+    // حرکت خودکار (اختیاری - فعال کنید اگر می‌خواهید)
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: true,
+    // },
+
+    // افکت (اختیاری)
+    // effect: 'slide',
+
+    // کشیدن با موس
+    grabCursor: true,
+
+    // صفحه‌گردی با کیبورد (اختیاری)
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
 });
