@@ -1,6 +1,5 @@
 @use "../../base.scss" as *;
 
-
 /* --- Rating Section (Avatars) --- */
 .rating {
   display: flex;
@@ -60,7 +59,6 @@
     }
   }
 }
-
 
 // ============================================================
 // PRODUCTS / SERVICES SECTION
@@ -1146,7 +1144,6 @@
   }
 }
 
-
 // ============================================================
 // BRANCHES SECTION STYLES
 // ============================================================
@@ -1980,16 +1977,16 @@
   // overflow-x: auto;
   // overflow-y: hidden;
   width: 100%;
-  
+
   &::-webkit-scrollbar {
     height: 6px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: $gray-200;
     border-radius: $border-radius-sm;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: $primary-700;
     border-radius: $border-radius-sm;
@@ -1997,28 +1994,29 @@
 }
 
 .work-ri-bottom-wrapper {
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // display: flex;
+  justify-items: center;
   gap: $spacing-md;
   height: 100%;
   // min-width: max-content;
-  scrollbar-width: thin;
-// scrollbar-width: none;
+  // scrollbar-width: thin;
+  // scrollbar-width: none;
 
   @media (max-width: 576px) {
-    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     // min-width: 400px;
   }
 }
 
 .work-ri-bottom-wrapper img {
   // width: 100%;
-    // width: 135px;
+  // width: 135px;
   height: 129px;
   object-fit: cover;
   border-radius: $border-radius-lg;
-  flex-shrink: 0;
+  // flex-shrink: 0;
 }
 
 .no-opacity {
@@ -3418,7 +3416,6 @@
   outline: none;
 }
 
-
 .mr-arrow img {
   width: 24px;
   height: 24px;
@@ -3524,4 +3521,3 @@
     display: none;
   }
 }
-
