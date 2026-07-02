@@ -1911,16 +1911,18 @@ li {
 }
 
 .work-ri-bottom-wrapper {
-  display: grid;
+  display: flex;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  height: 100%;
   gap: 12px;
   height: 100%;
   scrollbar-width: thin;
 }
 @media (max-width: 576px) {
   .work-ri-bottom-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    overflow-x: scroll;
+    scrollbar-width: thin;
   }
 }
 
@@ -2611,9 +2613,7 @@ li {
   gap: 7px;
   border-radius: 16px;
   padding-top: 12px;
-  padding-right: 16px;
   padding-bottom: 12px;
-  padding-left: 16px;
   border-width: 1px;
 }
 

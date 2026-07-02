@@ -569,9 +569,14 @@
 }
 
 .work-ri-bottom-wrapper {
-  display: grid;
+  // display: grid;
+  // justify-items: center;
+  // grid-template-columns: repeat(4, 1fr);
+  display: flex;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  height: 100%;
+
   // display: flex;
   gap: $spacing-md;
   height: 100%;
@@ -580,7 +585,9 @@
   // scrollbar-width: none;
 
   @media (max-width: 576px) {
-    grid-template-columns: repeat(2, 1fr);
+      overflow-x: scroll;
+  scrollbar-width: thin;
+    // grid-template-columns: repeat(2, 1fr);
     // min-width: 400px;
   }
 }
@@ -1259,9 +1266,9 @@
   gap: 7px;
   border-radius: $desktop-label-size;
   padding-top: $spacing-md;
-  padding-right: $desktop-label-size;
+  // padding-right: $desktop-label-size;
   padding-bottom: $spacing-md;
-  padding-left: $desktop-label-size;
+  // padding-left: $desktop-label-size;
   border-width: 1px;
 }
 .dep-multi-loc img {
@@ -2400,3 +2407,58 @@
 .mr-arrow-ri {
   right: 10px;
 }
+
+
+// // 
+// .address-slider {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .address-text-wrapper {
+//   // position: relative;
+//   overflow: hidden;
+//   height: 24px;
+//   // min-width: 320px;
+// }
+
+// .address-text {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   opacity: 0;
+//   transform: translateY(10px);
+//   transition: all 0.5s ease;
+//   word-break: break-word;
+// }
+
+// .address-text.active {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+
+// .address-text {
+//   white-space: nowrap;      /* جلوگیری از رفتن به خط بعد */
+//   overflow: hidden;        
+//   text-overflow: ellipsis;  /* نمایش سه نقطه در انتها */
+
+// }
+
+
+
+
+// @media (max-width: 992px) {
+
+//   .address-text-wrapper {
+//         overflow: hidden;
+//         align-items: center;
+//   }
+
+//   .address-text {
+//     position: relative;  
+//     white-space: normal;
+//     // text-overflow: unset;
+//   }
+
+// }

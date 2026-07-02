@@ -1939,16 +1939,18 @@ li {
 }
 
 .work-ri-bottom-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   justify-items: center;
+  gap: 12px;
+  height: 100%;
   gap: 12px;
   height: 100%;
   scrollbar-width: thin;
 }
 @media (max-width: 576px) {
   .work-ri-bottom-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    overflow-x: scroll;
+    scrollbar-width: thin;
   }
 }
 

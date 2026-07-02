@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  console.log("✅ همه چیز با موفقیت راه‌اندازی شد!");
+  // console.log("✅ همه چیز با موفقیت راه‌اندازی شد!");
 });
 
 // gallery
@@ -291,3 +291,126 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+// product colors
+$(document).ready(function () {
+  // ===== داده‌های کامل رنگ‌ها =====
+  const colorData = {
+    mesi: {
+      img: "../images/mesi-pro.png",
+      title: "چکشی مسی",
+      code: "۵",
+    },
+    nescoffe: {
+      img: "../images/unnamed-20 1.png",
+      title: "چکشی نسکافه ای",
+      code: "۶",
+    },
+    gray: {
+      img: "../images/unnamed-24 1.png",
+      title: "چکشی طوسی",
+      code: "۷",
+    },
+    cream: {
+      img: "../images/unnamed-21 1.png",
+      title: "چکشی کرم",
+      code: "۸",
+    },
+    darkred: {
+      img: "../images/unnamed-22 1.png",
+      title: "چکشی زرشکی",
+      code: "۹",
+    },
+    black: {
+      img: "../images/unnamed-23 1.png",
+      title: "چکشی مشکی",
+      code: "۱۰",
+    },
+  };
+
+  // ===== تابع به‌روزرسانی =====
+  function updateProduct(colorKey) {
+    const data = colorData[colorKey];
+    if (!data) {
+      console.warn("❌ رنگی با این کلید پیدا نشد:", colorKey);
+      return;
+    }
+
+    // تغییر عکس با افکت
+    const $img = $(".pro-img img");
+    $img.fadeOut(200, function () {
+      $(this).attr("src", data.img);
+      $(this).fadeIn(200);
+    });
+
+    // تغییر عنوان
+    $(".pro-info > span").text(data.title);
+
+    // تغییر کد
+    $(".pro-code span").text("کد: " + data.code);
+
+    // console.log(`✅ تغییر به: ${data.title} (${data.code})`);
+  }
+
+  // ===== کلیک روی رنگ‌ها =====
+  $(".pro-color").on("click", function (e) {
+    e.stopPropagation();
+
+    // 1. حذف کلاس active از همه
+    $(".pro-color").removeClass("active");
+
+    // 2. اضافه کردن کلاس active به عنصر کلیک شده
+    $(this).addClass("active");
+
+    // 3. دریافت کلید رنگ از data-color
+    const colorKey = $(this).data("color");
+
+    // 4. به‌روزرسانی محصول
+    updateProduct(colorKey);
+  });
+
+  // ===== افکت Hover =====
+  $(".pro-color").on("mouseenter", function () {
+    $(this).css({
+      transform: "scale(1.02)",
+      transition: "all 0.2s ease",
+    });
+  });
+
+  $(".pro-color").on("mouseleave", function () {
+    $(this).css("transform", "scale(1)");
+  });
+
+  updateProduct("mesi");
+
+  // console.log("✅ Color selector initialized!");
+});
+
+// articles
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: false,
+  speed: 600,
+  grabCursor: true,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+    },
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+// 

@@ -1,0 +1,589 @@
+@use "../../base.scss" as *;
+:root {
+  --primary-color: #3b82f6;
+  --bg-card: #ffffff;
+  --text-dark: #1e293b;
+  --border-color: #f1f5f9;
+  --bullet-inactive: #cbd5e1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: $border-radius-xl;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: $desktop-body-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius-xl;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // aspect-ratio: 4 / 3;
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: $spacing-lg;
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: $color-white;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-700;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background: $color-primary-main;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+// ============================================================
+// SLIDER WRAPPER
+// ============================================================
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+// ============================================================
+// BG ICON
+// ============================================================
+
+.bg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background-main;
+  gap: 10px;
+  border-radius: $border-radius-sm + 4px;
+  padding: $spacing-xs;
+}
+.swiper-slide img {
+  width: auto;
+  overflow: visible !important;
+}
+// ============================================================
+// SLIDER WRAPPER
+// ============================================================
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+// ============================================================
+// BG ICON
+// ============================================================
+
+.bg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background-main;
+  gap: 10px;
+  border-radius: $border-radius-sm + 4px;
+  padding: $spacing-xs;
+}
+.swiper-slide img {
+  width: auto;
+  overflow: visible !important;
+}
+// pot-banners
+.pot-banners {
+  margin: $spacing-5xl + 12px auto;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin: $spacing-5xl - 32px auto;
+  }
+}
+.pot-banner {
+  // width: 1320;
+  height: 380px;
+  // top: 3053px;
+  // left: 96px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #30445f 0%, #0d1928 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1058px) {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.le-top-banner img {
+  width: 400px;
+  // height: 431;
+  object-fit: cover;
+  // top: -57px;
+  // angle: 0 deg;
+  // opacity: 1;
+}
+.ri-top-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 38px;
+  @media (max-width: 1058px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pot-sheild {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3ab6d;
+  width: 217px;
+  // height: 48;
+  gap: 10px;
+  // angle: 0 deg;
+  // opacity: 1;
+  border-radius: 16px;
+  border-width: 1px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+.ri-top-banner img {
+  width: 24px;
+  height: 24px;
+}
+.ri-top-banner span {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #d3ab6d;
+}
+.pot-title span {
+  color: #ffffff;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: justify;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+.pot-yellow {
+  color: #d3ab6d !important;
+}
+.pot-subtitle span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: justify;
+  @media (max-width: 1058px) {
+    text-align: center;
+  }
+}
+.pot-buttons {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.pot-button {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(95deg, #d3ab6d -3.95%, #9f8153 94.38%);
+  width: 100%;
+  // width: 282px;
+  // height: 60px;
+  // min-width: 110px;
+  gap: 10px;
+  // angle: 0 deg;
+  // opacity: 1;
+  border-radius: 16px;
+  padding: 16px 32px;
+  justify-content: center;
+}
+.pot-button span {
+  color: #101d2d;
+  font-weight: 700;
+  font-style: Bold;
+  // font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.pot-whatsapp {
+  // width: 229px;
+  background: linear-gradient(94.68deg, #48875d 0%, #375e44 85.07%);
+}
+.pot-whatsapp span {
+  color: #ffffff;
+}
+.pot-call span {
+  color: #ffffff;
+}
+.pot-call {
+  // width: 229px;
+  background: linear-gradient(94.27deg, #13558d 0.61%, #123b5e 99.39%);
+}
+//hero
+.hero__wrapper2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero-title span {
+  color: #313131;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.hero-items {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-icons1 {
+  padding: 12px;
+  border-radius: 32px;
+  background-color: #eff6ff;
+  width: 48px;
+  height: 48px;
+}
+.hero-content-title span {
+  color: #6a7282;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.hero-content-subtitle span {
+  color: #6a7282;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+img {
+  // width: 100%;
+  display: block;
+  aspect-ratio: 0 !important;
+  object-fit: cover;
+}
+// ============================================================
+// ARTICLES SECTION STYLES
+// ============================================================
+
+.articles {
+  margin: $spacing-5xl auto $spacing-5xl;
+
+  @media (max-width: 768px) {
+    margin: $spacing-3xl auto $spacing-3xl;
+  }
+}
+
+.articles-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+// ===== عنوان بخش =====
+.article-title {
+  display: flex;
+  gap: $spacing-lg;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.article-title-te {
+  font-weight: $font-weight-black;
+  font-size: $desktop-h1-size;
+  color: $color-text-secondary-main;
+
+  @media (max-width: 768px) {
+    font-size: $mobile-h1-size;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $mobile-h2-size;
+  }
+}
+
+// ===== کانتینر کارت‌ها =====
+.arts-box {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-4xl;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-boxs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-lg;
+
+  @media (max-width: 1102px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 715px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ===== کارت مقاله =====
+.article-box {
+  position: relative;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  background-color: $color-white;
+  border-radius: $border-radius-xl;
+  gap: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: $transition-default;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// ===== تصویر مقاله =====
+.za-img {
+  width: 100%;
+  height: 204px;
+  object-fit: cover;
+  transition: $transition-fast;
+
+  @media (max-width: 768px) {
+    height: 180px;
+  }
+
+  .article-box:hover & {
+    transform: scale(1.02);
+  }
+}
+
+// ===== محتوای مقاله =====
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+  padding: $spacing-xl;
+
+  @media (max-width: 768px) {
+    padding: $spacing-lg;
+    gap: $spacing-lg;
+  }
+}
+
+// ===== اطلاعات نویسنده و تاریخ =====
+.article-infos {
+  display: flex;
+  gap: $spacing-3xl;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    gap: $spacing-lg;
+  }
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    font-weight: $font-weight-regular;
+    font-size: $desktop-caption-size;
+    line-height: 21.25px;
+    text-align: right;
+    color: $gray-600;
+
+    @media (max-width: 768px) {
+      font-size: $mobile-caption-size;
+    }
+  }
+}
+
+// ===== عنوان مقاله =====
+.art-title {
+  color: $color-text-primary-main;
+  font-weight: $font-weight-bold;
+  font-size: $desktop-h3-size;
+  line-height: 1.4;
+  text-align: right;
+
+  @media (max-width: 768px) {
+    font-size: $mobile-h3-size;
+  }
+}
+
+// ===== خلاصه مقاله =====
+.art-subtitle {
+  font-weight: $font-weight-regular;
+  font-size: $desktop-body-small-size;
+  line-height: 1.5;
+  text-align: justify;
+  color: $color-text-muted-main;
+
+  @media (max-width: 768px) {
+    font-size: $mobile-body-small-size;
+  }
+}
+
+// ===== لینک ادامه مطلب =====
+.art-more {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  cursor: pointer;
+  transition: $transition-fast;
+  width: fit-content;
+
+  &:hover {
+    gap: $spacing-md;
+
+    span {
+      color: $primary-800;
+    }
+
+    img {
+      transform: translateX(-4px);
+    }
+  }
+
+  span {
+    color: $primary-700;
+    font-weight: $font-weight-semibold;
+    font-size: $desktop-body-small-size;
+    text-align: center;
+    transition: $transition-fast;
+
+    @media (max-width: 768px) {
+      font-size: $mobile-button-size;
+    }
+  }
+
+  img {
+    width: 17px;
+    height: 17px;
+    transition: $transition-fast;
+  }
+}
+
+// ===== برچسب (آموزش/مقاله) =====
+.learn {
+  background-color: $primary-900;
+  width: 70px;
+  height: 32px;
+  border-radius: 10.75px;
+  position: absolute;
+  top: $spacing-lg;
+  right: $spacing-lg;
+  padding: $spacing-xs $spacing-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: $color-white;
+    font-weight: $font-weight-medium;
+    font-size: $desktop-caption-size;
+    line-height: 100%;
+    text-align: right;
+
+    @media (max-width: 768px) {
+      font-size: $mobile-caption-size;
+    }
+  }
+}
+
+//
+
+.articles-wrapper {
+  max-height: 500px; /* یا هر ارتفاعی که مد نظر شماست */
+  // overflow-y: hidden; /* ایجاد اسکرول عمودی در صورت نیاز */
+  overflow-x: auto; /* جلوگیری از اسکرول افقی */
+  padding-right: 10px; /* برای اینکه اسکرول روی محتوا نیفتد */
+}
+
+/* اختیاری: شخصی سازی ظاهر اسکرول‌بار برای زیبایی بیشتر */
+.articles-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.articles-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* رنگ اسکرول‌بار */
+  border-radius: 10;
+}
